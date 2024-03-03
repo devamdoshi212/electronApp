@@ -1,0 +1,30 @@
+{
+  "name": "auto-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec electron .",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "render.com.com.com",
+    "productName": "MYFIRSTAPP",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3",
+    "electron-updater": "^6.1.8",
+    "nodemon": "^3.1.0"
+  }
+}
